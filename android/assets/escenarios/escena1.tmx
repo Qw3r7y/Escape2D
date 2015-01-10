@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-up" width="50" height="10" tilewidth="27" tileheight="27">
+ <tileset firstgid="1" name="graficos" tilewidth="32" tileheight="32">
+  <image source="../graficos.jpg" trans="000000" width="551" height="368"/>
+  <tile id="1">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="188" name="grafico" tilewidth="30" tileheight="30">
+  <image source="../graficos.jpg" trans="000000" width="551" height="368"/>
+  <tile id="0">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="bloqueado" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="fondo" width="50" height="10">
+  <data encoding="base64" compression="zlib">
+   eJzrZGRg6BzFo3gUj+JRPIpH8ZDGADn9DZg=
+  </data>
+ </layer>
+ <layer name="piso" width="50" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjALc4AAENwysK0gHBxiGprtB4ADD4HY7L+NAu4AywIXm/j3DBAMAZxYq0g==
+  </data>
+ </layer>
+ <layer name="fondotop" width="50" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMJSBBSMDgyXjQLuCdFCP5mYvIN8bjz/O0tY5Qx4AADrYAlg=
+  </data>
+ </layer>
+ <objectgroup name="objetos">
+  <object x="1296" y="155.25" width="33.75" height="33.75">
+   <properties>
+    <property name="finEscena" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
