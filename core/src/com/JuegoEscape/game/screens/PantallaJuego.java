@@ -9,7 +9,6 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
@@ -44,6 +43,7 @@ public class PantallaJuego extends PantallaBase implements Screen {
 		renderer.setView(camara);
 		renderer.render();
 		
+
 		renderer.render(fondo);
 		renderer.render(piso);
 		
@@ -62,7 +62,8 @@ public class PantallaJuego extends PantallaBase implements Screen {
 	
 	@Override
 	public void show() {
-		escenario = new TmxMapLoader().load("escenarios/escena1.tmx");
+		//escenario = new TmxMapLoader().load("escenarios/escena1.tmx");
+		escenario = this.manejaEscenarios();
 		renderer = new OrthogonalTiledMapRenderer(escenario);
 		camara = new OrthographicCamera();
 		
@@ -103,4 +104,25 @@ public class PantallaJuego extends PantallaBase implements Screen {
 		jugador.getTexture().dispose();
 		atlasJugador.dispose();
 	}
+	
+	
+	
+	/*El número de escena actual que le toca al personaje, próximamente se lo pedimos a SQLlite o archivo externo
+	 * Escena Inicial = 1
+	 */
+	private int numeroEscena = 2 ;
+	
+	public TiledMap manejaEscenarios() {
+		switch(numeroEscena) {
+		case 1:
+			escenario = new TmxMapLoader().load("escenarios/escena1.tmx");
+			break;
+		case 2:
+			escenario = new TmxMapLoader().load("escenarios/escena2.tmx");
+			break;
+		}
+		return escenario;		
+	}
+	
+
 }

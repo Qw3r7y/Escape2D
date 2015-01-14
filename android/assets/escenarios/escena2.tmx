@@ -1,51 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="left-up" width="50" height="10" tilewidth="27" tileheight="27">
- <tileset firstgid="1" name="graficos" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="graficos" tilewidth="30" tileheight="30">
   <image source="../graficos.jpg" trans="000000" width="551" height="368"/>
- </tileset>
- <tileset firstgid="188" name="grafico" tilewidth="30" tileheight="30">
-  <image source="../graficos.jpg" trans="000000" width="551" height="368"/>
-  <tile id="0">
+  <tile id="19">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
   </tile>
-  <tile id="1">
+  <tile id="40">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
   </tile>
-  <tile id="2">
+  <tile id="73">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
   </tile>
-  <tile id="3">
+  <tile id="76">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
   </tile>
-  <tile id="4">
+  <tile id="90">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
   </tile>
-  <tile id="6">
-   <properties>
-    <property name="bloqueado" value=""/>
-   </properties>
-  </tile>
-  <tile id="57">
-   <properties>
-    <property name="bloqueado" value=""/>
-   </properties>
-  </tile>
-  <tile id="78">
-   <properties>
-    <property name="bloqueado" value=""/>
-   </properties>
-  </tile>
-  <tile id="81">
+  <tile id="91">
    <properties>
     <property name="bloqueado" value=""/>
    </properties>
@@ -53,21 +35,21 @@
  </tileset>
  <layer name="fondo" width="50" height="10">
   <data encoding="base64" compression="zlib">
-   eJzrZGRg6BzFo3gUj+JRPIpH8ZDGADn9DZg=
+   eJw7w8DAcGYUj+JRjBWfHsVDFp+C4oF2xygexfTCAB4PjVI=
   </data>
  </layer>
  <layer name="piso" width="50" height="10">
   <data encoding="base64" compression="zlib">
-   eJz7zsDA8J0KGBlQwzxK3TAUwag/MMEBCG6gknEkgdH4gIADDAMXB8iAVH8cYBgc7kYHxPjjAMPgdDsM8DIO7fzBxYhgg/ywZ5hgAPBfaZs=
+   eJyLYWBgiMGBsQFcavHpIccccjAh4MXA0ECCEzGALwRTZAY+QGoYDlZAK3/QOvyRQTQDYX+gpydK0xcI0MKP1IoPeoY/NjBU84cmBDfA+Pj8AUtDuOjBBHD5A+RWQpjOTsULQH7wGiYYACp8Mv4=
   </data>
  </layer>
  <layer name="fondotop" width="50" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMJSBBSMDgyXjQLuCdFCP5mYvIN8bjz/O0tY5Qx4AADrYAlg=
+   eJxjYBgFo4B64OhAO2AUjIIhDmrR+HUD4grSAcjd1HYrzEwgbgCyG6hs/LADAFK5BbI=
   </data>
  </layer>
  <objectgroup name="objetos">
-  <object x="1296" y="155.25" width="33.75" height="33.75">
+  <object x="1289.25" y="47.25" width="33.75" height="33.75">
    <properties>
     <property name="finEscena" value=""/>
    </properties>
