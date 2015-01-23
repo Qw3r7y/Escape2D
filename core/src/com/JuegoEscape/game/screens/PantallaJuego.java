@@ -23,7 +23,7 @@ public class PantallaJuego extends PantallaBase implements Screen {
 	
 	private TiledMap escenario;
 	private OrthogonalTiledMapRenderer renderer;
-	private OrthographicCamera camara;
+	public OrthographicCamera camara;
 	
 	private int[] fondo = new int[] {0}, piso = new int[] {1}, fondotop = new int[] {2};
 	
@@ -52,6 +52,7 @@ public class PantallaJuego extends PantallaBase implements Screen {
 		renderer.getBatch().end();
 		
 		renderer.render(fondotop);
+		
 	}
 	
 	@Override
@@ -123,6 +124,15 @@ public class PantallaJuego extends PantallaBase implements Screen {
 		}
 		return escenario;		
 	}
+	
+	/*
+	 para obtener los fps en pantalla
+	 		batch.begin();
+		Assets.font.draw(batch, "Fps:" + Gdx.graphics.getFramesPerSecond(),
+				0, 20);
+		batcher.end();
+		
+	*/
 	
 
 }
